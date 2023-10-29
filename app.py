@@ -5,7 +5,7 @@ import time
 st.set_page_config(layout="wide")
 
 # Path to the folder containing the images
-folder_path = "/images"
+folder_path = "images"
 
 # Get a list of image files in the folder
 image_files = [filename for filename in os.listdir(folder_path) if filename.endswith(('.jpg', '.jpeg', '.png', '.gif'))]
