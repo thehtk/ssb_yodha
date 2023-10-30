@@ -7,7 +7,7 @@ page_number = st.experimental_get_query_params().get("page", 1)
 page_number = int(page_number[0]) if isinstance(page_number, list) else int(page_number)
 
 # Path to the folder containing the images
-folder_path = r"C:\Users\Hp\OneDrive\Projects\SSB\images"
+folder_path = r"images"
 
 # Get a list of image files in the folder
 image_files = [filename for filename in os.listdir(folder_path) if filename.endswith(('.jpg', '.jpeg', '.png', '.gif'))]
