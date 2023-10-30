@@ -63,7 +63,7 @@ def wat():
     """
     st.markdown(wat_description, unsafe_allow_html=True)
     
-    no_ques = int(st.number_input("Enter a words(you want to test):",step=5,value=30,min_value=0,max_value=2000))
+    no_ques = int(st.number_input("Enter a words(you want to test):",step=5,value=60,min_value=0,max_value=2000))
     test_words = random.sample(words, no_ques)
     if st.button("Start"):
         show(test_words,no_ques)
