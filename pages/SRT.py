@@ -71,7 +71,7 @@ def srt():
     size=len(all_srt_ques)
     
     # Limit the number of questions to the maximum available
-    no_ques = int(st.number_input("Enter a number of questions (you want to test):", step=5, value=2, min_value=0, max_value=size))
+    no_ques = int(st.number_input("Enter a number of questions (you want to test):", step=5, value=60, min_value=0, max_value=size))
     
     # Check if the selected number of questions is greater than the available questions
     random_numbers = random.sample(range(1, size + 1), no_ques)
