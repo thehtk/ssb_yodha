@@ -3,7 +3,7 @@ import random
 import os
 import time
 import csv
-import winsound
+
 import pandas as pd
 
 
@@ -30,7 +30,7 @@ def show(srt_ques,no_ques,srt_ans):
     
     
     for i in range(no_ques):
-        for j in range(0,3):
+        for j in range(0,30):
 
             image_placeholder1.subheader(f"S{i+1} : {srt_ques[i]}")
             image_placeholder2.write(f"Time left: {30 - j} seconds")
