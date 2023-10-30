@@ -8,7 +8,7 @@ import pandas as pd
 
 
 # Specify the file path
-file_path = r"C:\Users\Hp\OneDrive\Projects\SSB\data\srt_final.xlsx"
+file_path = r"data/srt_final.xlsx"
 
 # Read the Excel file into a DataFrame
 df = pd.read_excel(file_path)
