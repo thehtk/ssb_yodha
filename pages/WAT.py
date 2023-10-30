@@ -8,7 +8,7 @@ import winsound
 
 
 # Open the CSV file
-with open("C:\\Users\\Hp\\OneDrive\\Projects\\SSB\\data\\words.csv", 'r') as file:
+with open("data/words.csv", 'r') as file:
     # Create a CSV reader object
     csv_reader = csv.reader(file)
     
