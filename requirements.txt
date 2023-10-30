@@ -2,3 +2,4 @@ streamlit
 Pillow
 csv
 openpyxl
+pandas
