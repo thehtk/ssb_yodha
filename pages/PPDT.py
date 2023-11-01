@@ -32,10 +32,10 @@ def show(image_path):
     image_placeholder2 = st.empty()
     image_placeholder2.text("")
     
-    time_left=10
+    time_left=30
     col1, col2 = st.columns(2)
     # Wait for 30 seconds before removing the image
-    for i in range(11):
+    for i in range(30):
         time.sleep(1)
         # Update the image dynamically after 1 second delay
         with col1:
