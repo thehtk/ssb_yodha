@@ -11,6 +11,7 @@ folder_path = r"images"
 
 # Get a list of image files in the folder
 image_files = [filename for filename in os.listdir(folder_path) if filename.endswith(('.jpg', '.jpeg', '.png', '.gif'))]
+image_files.sort()
 
 def show(image_path):
     # Open the image using PIL
