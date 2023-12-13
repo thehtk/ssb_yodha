@@ -3,6 +3,7 @@ import random
 import os
 import time
 import csv
+import winsound
 
 
 
@@ -37,7 +38,7 @@ def show(test_words,no_ques):
             
             
             time.sleep(1)
-        #winsound.Beep(500, 300)
+        winsound.Beep(2000, 300)
             
             
     image_placeholder = st.empty()
