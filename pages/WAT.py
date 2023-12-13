@@ -39,6 +39,7 @@ def show(test_words,no_ques):
             
             time.sleep(1)
         winsound.Beep(2000, 300)
+        
             
             
     image_placeholder = st.empty()
