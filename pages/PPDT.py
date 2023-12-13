@@ -2,6 +2,7 @@ import streamlit as st
 import os
 from PIL import Image
 import time
+import winsound
 st.set_page_config(layout="wide")
 page_number = st.experimental_get_query_params().get("page", 1)
 page_number = int(page_number[0]) if isinstance(page_number, list) else int(page_number)
@@ -42,7 +43,7 @@ def show(image_path):
             image_placeholder.image(image, caption='Image Caption',width=500)
         with col2:
             image_placeholder2.header(time_left-i)
-    
+    winsound.Beep(2000, 300)
     # After 30 seconds, remove the image
     image_placeholder.empty()
     image_placeholder2.empty()
@@ -52,9 +53,11 @@ def show(image_path):
         image_placeholder.header("Writting time")
         image_placeholder2.write(f"{int((time_left-i)/60)} min {(time_left-i)%60} sec")
         
-        
+       
     image_placeholder.empty()
     image_placeholder2.empty()
+    winsound.Beep(2000, 300)
+    winsound.Beep(2000, 300)
     
     
     
