@@ -3,7 +3,7 @@ import random
 import os
 import time
 import csv
-
+import winsound
 import pandas as pd
 
 
@@ -37,7 +37,7 @@ def show(srt_ques,no_ques,srt_ans):
             
             
             time.sleep(1)
-        #winsound.Beep(500, 300)
+        winsound.Beep(2000, 300)
             
             
     image_placeholder1.empty()
